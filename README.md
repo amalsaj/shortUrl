@@ -84,5 +84,10 @@ Copy code
 npm run start:prod
 ## Deployed Link
 ```
+## Complete API Information
+
+```
+ https://shorturl-1-iesr.onrender.com/api-docs
+ ```
 You can access the deployed application at:
 https://shorturl-1-iesr.onrender.com/
