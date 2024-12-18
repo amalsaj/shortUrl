@@ -1,7 +1,11 @@
 const redis = require("redis");
 
 const redisClient = redis.createClient({
-  url: process.env.REDIS_URL,
+  password: process.env.REDIS_PASSWORD,
+  socket: {
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT,
+  },
 });
 
 redisClient.on("error", (err) => {
@@ -11,7 +15,7 @@ redisClient.on("error", (err) => {
 redisClient
   .connect()
   .then(() => {
-    console.log("Connected to Redis");
+    console.log("Connected to Redis✅");
   })
   .catch((err) => {
     console.error("Failed to connect to Redis", err);

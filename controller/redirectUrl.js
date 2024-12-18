@@ -18,7 +18,7 @@ const redirectUrl = async (req, res) => {
     if (!urlDocument) {
       return res
         .status(404)
-        .json({ success: false, error: "Short  jj URL not found." });
+        .json({ success: false, error: "Short URL not found." });
     }
 
     urlDocument.totalClicks += 1;

@@ -36,6 +36,10 @@ app.use("/api", urlRouter);
 
 app.use(redirectRouter);
 
+app.use("/", (req, res) => {
+  res.send("welcome to url shortner");
+});
+
 app.use((req, res) => {
   res.status(404).json({ message: "Route not found" });
 });
