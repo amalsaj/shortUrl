@@ -61,7 +61,7 @@ Follow the steps below to set up and run the project in both development and pro
 ```bash
    git clone <repository_url>
 ```
-3.Navigate to the project directory:
+2.Navigate to the project directory:
 ```bash
 cd <project_directory>
 ```
